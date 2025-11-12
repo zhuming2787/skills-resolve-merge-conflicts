@@ -18,24 +18,29 @@ _了解为什么会产生冲突，以及如何正确地解决它们。_
 </header>
 
 <!--
-  <<< Author notes: Step 4 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
+  <<< Author notes: Finish >>>
+  Review what we learned, ask for feedback, provide next steps.
 -->
 
-## Step 4: 合并你的 Pull Request
+## 完成
 
-_快完成啦! :heart:_
+_恭喜你！你已经顺利完成了本课程！_
 
-现在，你已经可以[合并（merge）](https://docs.github.com/en/get-started/quickstart/github-glossary#merge)你的 Pull Request 了！
+<img src=https://octodex.github.com/images/benevocats.jpg alt=celebrate width=300 align=right>
 
-### :keyboard: 实操环节: 合并你的 Pull Request
+下面是你在本课程中完成的内容回顾：
 
-1. 首先，确保 Pull Request 中的所有冲突都已经解决。
-   > 如果不确定怎么做，可以回顾第一步的操作说明。
-2. 点击 **Merge pull request** 按钮，执行合并操作。
-3. （可选）删除分支 `my-resume`。
-4. 等待大约 20 秒后，刷新当前页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测进度，并进入下一步。
+- 了解了合并冲突产生的原因。
+- 学会了解决一次简单的合并冲突。
+- 自己动手创建了一个冲突，并成功解决它！
+
+### 接下来可以做什么？
+
+* 试着用 **GitHub Pages** 搭建你自己的 Markdown 简历网站！可以在我们的 [GitHub Pages 课程](https://github.com/skills/github-pages) 中学习如何操作。
+* 欢迎在[讨论区](https://github.com/orgs/skills/discussions/categories/resolve-merge-conflicts)分享你对本课程的想法和体验。
+* 继续学习其他 [GitHub Skills 课程](https://github.com/skills)。
+* 阅读 [GitHub 入门文档](https://docs.github.com/en/get-started)，深入了解更多基础知识。
+* 想参与开源项目？可以在 [GitHub Explore](https://github.com/explore) 上发现有趣的项目并开始贡献。
 
 <footer>
 
