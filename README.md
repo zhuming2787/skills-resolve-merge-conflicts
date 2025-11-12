@@ -18,26 +18,34 @@ _了解为什么会产生冲突，以及如何正确地解决它们。_
 </header>
 
 <!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
 -->
 
-## Step 1: 创建 Pull Request
+## Step 2: 解决合并冲突
 
-_欢迎来到 "Managing Merge Conflicts" 课程! :wave:_
+_现在我们来深入看看合并冲突是怎么回事吧! :mag:_
 
-**什么是 _合并冲突（merge conflict）_ ?**: 当两个不同分支中，对同一个文件的同一部分进行了修改时，就会产生 **合并冲突**。
-通常，我们会在创建 Pull Request 时发现这些冲突，所以接下来就先从创建一个 Pull Request 开始吧。
+第一次看到合并冲突时可能会令人生畏，但不用担心，Git 在处理冲突时比你想象的聪明。它只是在某些情况下需要人工干预，告诉它该保留哪些内容、该舍弃哪些。
+有时我们需要将两个分支的内容都合并在一起，有时候你可能需要完全重写一个版本。这就是为什么需要人来查看冲突内容，并做出正确修改。
 
-### :keyboard: 实操环节: 创建 Pull Request
+### :keyboard: 实操环节: 解决合并冲突
 
-1. 打开一个新的浏览器标签页，方便一边操作一边阅读本教程。
-2. 我们已经在仓库的 `my-resume` 分支中做了一点修改。
-3. [创建一个 Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)，将 `my-resume` 设为 **head 分支**，`main` 设为 **base 分支**。Pull Request 的标题和内容可以填写为 `Resolving merge conflicts`。
-4. 等待大约 20 秒后，刷新本页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测进度并进入下一步。
+1. 打开你刚刚创建的 Pull Request，我们已经为你准备好了一个冲突示例。别慌，这正是练习的重点！
+2. 在页面底部的提示区域中，找到 “This branch has conflicts that must be resolved” 字样，然后点击 **Resolve conflicts** 按钮。
+3. 你会看到一些高亮的标记区域，冲突部分会以 `<<<<<<< my-resume` 开头，以 `>>>>>>> main` 结尾。这些标记是 Git 自动加上的，用来告诉你两边的代码哪里有冲突。
+4. 删除 main 分支中的修改内容，也就是删除 `=======` 下面、`>>>>>>> main` 上面的所有内容。
+5. 接着，把下面几行合并标记也删掉：
+
+   ```
+   <<<<<<< my-resume
+   =======
+   >>>>>>> main
+   ```
+6. 删除完冲突标记后，点击 **Mark as resolved**。
+7. 最后，点击 **Commit merge**。
+8. 等待大约 20 秒后，刷新当前页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动识别进度并进入下一步。
 
 <footer>
 
