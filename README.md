@@ -18,51 +18,26 @@ _了解为什么会产生冲突，以及如何正确地解决它们。_
 </header>
 
 <!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
+  <<< Author notes: Step 1 >>>
+  Choose 3-5 steps for your course.
+  The first step is always the hardest, so pick something easy!
+  Link to docs.github.com for further explanations.
+  Encourage users to open new tabs for steps!
 -->
 
-## Welcome
+## Step 1: 创建 Pull Request
 
-当两个人在 GitHub 上修改同一份文件时，就有可能出现 **合并冲突** 问题。这在多人协同开发中非常常见。虽然解决冲突有时需要沟通和协调，但其实并没有想象中那么复杂。
+_欢迎来到 "Managing Merge Conflicts" 课程! :wave:_
 
-本课程将带你一步步学习如何定位并解决合并冲突，让团队开发工作顺利进行。
+**什么是 _合并冲突（merge conflict）_ ?**: 当两个不同分支中，对同一个文件的同一部分进行了修改时，就会产生 **合并冲突**。
+通常，我们会在创建 Pull Request 时发现这些冲突，所以接下来就先从创建一个 Pull Request 开始吧。
 
-- **目标人群**：初学者、GitHub 新用户、Git 新手、学生、管理者及团队成员。
-- **学习内容**：什么是合并冲突、如何解决冲突、以及怎样减少冲突的发生。
-- **您将完成**：在课程中，我们将一起操作一个简短的 Markdown 简历文件。
-- **先决条件**：建议先学习 [GitHub 入门课程](https://github.com/github-china/introduction-to-github)。
-- **课程时长**：大约 30 分钟内即可完成。
+### :keyboard: 实操环节: 创建 Pull Request
 
-在本课程中，你将完成以下内容：
-
-1. 创建一个 Pull Request
-2. 解决一次合并冲突
-3. 人为制造一个合并冲突
-4. 合并你的 Pull Request
-
-### 如何开始课程
-
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'resolve-merge-conflicts',
-  owner: '@me',
-  name: 'skills-resolve-merge-conflicts',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=github-china&template_name=resolve-merge-conflicts&owner=%40me&name=skills-resolve-merge-conflicts&description=My+clone+repository&visibility=public)
-
-1. 右键点击 **Start course**，在新标签页中打开链接。
-2. 在新页面中根据系统提示新建一个仓库。
-   - 仓库名称、描述这些字段系统已经帮我们自动填充好了，您可以按需修改。
-   - 建议选择公开仓库，因为私有仓库有[GitHub Actions 分钟数限制](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)。
-   - 最后点击 Create repository 按钮
-3. 仓库创建完毕后，等待大约 20 秒（等待Action执行），然后刷新页面。注意是刷新您仓库的页面，不是本课程的页面。如果页面没有变化，请继续等待。然后按照 README 中的步骤一步步进行。
+1. 打开一个新的浏览器标签页，方便一边操作一边阅读本教程。
+2. 我们已经在仓库的 `my-resume` 分支中做了一点修改。
+3. [创建一个 Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)，将 `my-resume` 设为 **head 分支**，`main` 设为 **base 分支**。Pull Request 的标题和内容可以填写为 `Resolving merge conflicts`。
+4. 等待大约 20 秒后，刷新本页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测进度并进入下一步。
 
 <footer>
 
